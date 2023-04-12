@@ -1,5 +1,4 @@
 .sidebar{
-
     position: fixed;
     left: 0;
     bottom: 0;
@@ -7,8 +6,7 @@
     width:100px;
     background-color: white;
     z-index: 200;
-
-
+    
 }
 
 
@@ -17,11 +15,13 @@
     height: 50px;
     margin-bottom: 5px;
     display: flex;
+    left: 10px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     margin-top: 30px;
     cursor: pointer;
+    
 
 }
 
@@ -30,15 +30,39 @@
 }
 
 .sidebar-link img{
+    
     width: 25px;
     height: 25px;
     margin-bottom: 8px;
+    
         
 }
 
 .sidebar-link div{
     font-family: Roboto,Arial;
     font-size: 12px;
-    justify-content: center;
-    
+    display: flex;
 }
+
+@media (min-width: 1200px) {
+    .sidebar{
+        width: 180px;
+        
+    }
+    .sidebar-link{
+        flex-direction: row;
+        justify-content: initial;
+        align-items: center;
+    }
+    .sidebar-link img{
+        padding-left: 25px;
+    }
+    .sidebar-link div{
+        padding-left: 10px;
+        padding-bottom: 5px;
+    }
+    .body{
+        padding-left: 180px;
+    }
+}
+    
